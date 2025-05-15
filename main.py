@@ -17,7 +17,8 @@ class SimpleHandler(BaseHTTPRequestHandler):
 
 # Запуск сервера
 if __name__ == "__main__":
+    print("The server is starting to start...")
     server_address = ("", 8000)  # слушать на всех интерфейсах
     httpd = HTTPServer(server_address, SimpleHandler)
-    print("🚀 Server running at http://localhost:8000")
+    print("Server running at http://localhost:8000")
     httpd.serve_forever()
