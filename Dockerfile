@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY server.py .
+COPY main.py .
 
 EXPOSE 8000
 
